@@ -1,33 +1,3 @@
-# from build_graph import build_graph_pure_python
-
-# def lcc(graph):
-#     max_connect_comp = set()
-#     for nodeID in graph:
-#         stack = []
-#         stack.append(nodeID)
-#         while len(stack) > 0:
-#             current_node = stack.pop()
-#             if current_node not in max_connect_comp:
-#                 max_connect_comp.add(current_node)
-#             else:
-#                 continue
-#             for nei_info in graph[current_node]:
-#                 stack.append(nei_info['neighbor'])
-
-#     return max_connect_comp
-
-# if __name__ == '__main__':
-#     graph = build_graph_pure_python()
-#     print('bắt đầu tìm thành phần liên thông lớn nhất')
-#     l = lcc(graph)
-#     print('thành phần liên thông lớn nhất bao gồm')
-#     for i in l:
-#         print(f'node id: {i}')
-#     ll = len(l)
-#     print(f'thành phần liên thông lớn nhất có {ll} node')
-#     lll = len(graph) - ll
-#     print(f'vậy ta lọc được {lll} node rác')
-
 from build_graph import build_graph_pure_python
 
 def lcc(graph):
